@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Nabila Khanun</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        body {
+            background: linear-gradient(to bottom, #5ecbf7, #ffffff);
+            color: #333;
+        }
+        .welcome {
+            background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtvmoUGpeGedkzXOBjcurGiIae6lGaCehm4Q&s') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            height: 100vh; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .welcome h1 {
+            font-size: 3.5em;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(51, 51, 51, 0.8);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .nav a {
+            padding: 14px 20px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+        .nav a:hover {
+            background-color: #5ecbf7;
+            color: #333;
+        }
+        .content {
+            padding: 40px;
+            text-align: center;
+            margin-top: 60px;
+        }
+        .hidden {
+            display: none;
+        }
+        .produk-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .produk-item {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .produk-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .produk-item img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .footer {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #5ecbf7;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        button:hover {
+            background-color: #86d1ff;
+        }
+        @media screen and (max-width: 768px) {
+            .welcome h1 {
+                font-size: 2em;
+            }
+            .produk-item {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome" id="welcome">
+        <div>
+            <h1>Selamat Datang di Portfolio Nabila Khanun</h1>
+          
+        </div>
+    </div>
+
+    <div class="nav">
+        <a href="#beranda" onclick="showPage('beranda')">Beranda</a>
+        <a href="#profil" onclick="showPage('profil')">Tentang Saya</a>
+        <a href="#portfolio" onclick="showPage('portfolio')">Proyek</a>
+        <a href="#hubungi" onclick="showPage('hubungi')">Kontak</a>
+    </div>
+   
+
+    <div id="beranda" class="content hidden">
+        <h2>Halo, Saya Nabila Khanun</h2>
+        <p>Seorang mahasiswa Digital Business 
+        <P> siap membantu Anda dalam menghadirkan ide-ide brilian ke dalam dunia digital.</p>
+    </div>
+
+    <div id="profil" class="content hidden">
+        <h2>Tentang Saya</h2>
+        <p>Saya berfokus pada pengembangan situs web yang menarik dan strategi media sosial kreatif. Saya percaya pada kekuatan desain dan teknologi untuk menyampaikan pesan.</p>
+        <h3>Keahlian</h3>
+        <ul>
+            <li>Pengembangan Website</li>
+            <li>Desain Grafis</li>
+            <li>Strategi Media Sosial</li>
+        </ul>
+    </div>
+    
+    <div id="portfolio" class="content hidden">
+        <h2>Proyek Saya</h2>
+        <p>Berikut adalah beberapa proyek yang telah saya selesaikan:</p>
+        <div class="produk-section">
+            <div class="produk-item">
+                <img src="https://newmed.ac.id/wp-content/uploads/2023/04/Profesi-Desain-Grafis-ok.jpg" alt="Proyek 1">
+                <h3>Proyek 1</h3>
+                <p>MENDESAIN WEBSITE DARI GOOGLE SITES.</p>
+            </div>
+            <div class="produk-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMnBE-aWLSBIdQQfBocSrVop9ymFOYR0yJbQ&s.jpg" alt="Proyek 1">
+                <h3>Proyek 2</h3>
+                <p>MEMBUAT APLIKASI DARI FIGMA.</p>
+            </div>
+        </div>
+      
+    
+    </div>
+
+    <div id="hubungi" class="content hidden">
+        <h2>Kontak Saya</h2>
+        <p>Ingin berkolaborasi? Hubungi saya melalui:</p>
+        <p><strong>Email:</strong> khanunabilah29@gmail.com</p>
+        <p><strong>Telepon:</strong> +62 895 4284 00707</p>
+    </div>
+   
+
+    <div class="footer">
+        <p>&copy; 2024 Nabila Khanun. Semua Hak Dilindungi.</p>
+    </div>
+
+    <script>
+        function showPage(page) {
+            const pages = ['beranda', 'profil', 'portfolio', 'hubungi'];
+            pages.forEach(p => document.getElementById(p).classList.add('hidden'));
+            document.getElementById(page).classList.remove('hidden');
+            document.getElementById('welcome').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
